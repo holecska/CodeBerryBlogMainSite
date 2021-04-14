@@ -1,0 +1,23 @@
+.footer{
+  display: grid;
+  grid-template-columns: [margin-left-start] 1fr [margin-left-end posts-start] 69.375vw [posts-end margin-right-start] 1fr [margin-right-end];
+  align-content: center;
+
+  background-color: $color-secondary;
+  height: 10rem;
+
+  &__copyright{
+    grid-column: 2/3;
+
+    color: $color-grey-dark;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: Bold;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    &--designer{
+      color: $color-primary;
+    }
+  }
+}
